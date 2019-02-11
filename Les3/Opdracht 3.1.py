@@ -13,3 +13,5 @@ if int(score2) > 15:
     print('je bent geslaagd met een score van ' + str(score2))
 else:
     print('je bent gezakt met een score van ' + str(score2))
+
+print('bewijs')
