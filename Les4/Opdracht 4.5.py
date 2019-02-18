@@ -1,6 +1,7 @@
 def kwadraten_som(grondgetallen):
-    a = grondgetallen[0]
-    b = grondgetallen[1]
-    c = grondgetallen[2]
-    kwasum = a**2+b**2+c**2
-    return kwasum
+    som = 0
+    for getal in grondgetallen:
+        if getal > 0:
+            som += getal ** 2
+    print(som)
+print(kwadraten_som([3,-1,2]))

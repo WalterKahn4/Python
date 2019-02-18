@@ -1,10 +1,9 @@
 def wijzig(letterlijst):
-    letterlijst.remove('a')
-    letterlijst.remove('b')
-    letterlijst.remove('c')
-    letterlijst.append('d')
-    letterlijst.append('e')
-    letterlijst.append('f')
-    print(lst)
+    letterlijst[0]='d'
+    letterlijst[1]='e'
+    letterlijst[2]='f'
 
-
+lijst = ['a','b','c']
+print(lijst)
+wijzig(lijst)
+print(lijst)
