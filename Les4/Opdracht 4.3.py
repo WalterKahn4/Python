@@ -3,3 +3,4 @@ def lang_genoeg (a):
         print('Je bent lang genoeg voor de attractie!')
     else:
         print('Sorry, je bent te klein!')
+
