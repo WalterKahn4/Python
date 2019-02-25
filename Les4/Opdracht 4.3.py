@@ -4,3 +4,4 @@ def lang_genoeg (a):
     else:
         print('Sorry, je bent te klein!')
 
+ 

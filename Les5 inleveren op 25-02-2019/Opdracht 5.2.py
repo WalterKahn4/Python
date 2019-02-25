@@ -1,5 +1,11 @@
-infile = open('C:\users\walterka\desktop\kaartnummers.txt', 'r')
-
-infile.write('{} heeft kaartnummer : {}'.format([-10:],[:6]))
+infile = open("kaartnummers.py", 'rt')
+content = infile.read()
+print(content)
+print(content[8:18] + ' heeft kaartnummer: ' + content[0:6])
+print(content[28:39] + ' heeft kaarnummer: ' + content[19:25])
+print(content[] + ' heeft kaarnummer: ' + content[])
+print(content[] + ' heeft kaarnummer: ' + content[])
+print(content[] + ' heeft kaarnummer: ' + content[])
+print(content[] + ' heeft kaarnummer: ' + content[])
 
 infile.close()

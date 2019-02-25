@@ -6,4 +6,6 @@ def tabel(c):
     for i in range(-30, 50,10):
         c = c+10
         f = c*1.8+32
-        print('{:4} {:4}'.format(float(f),float(c)))
+        print('{:4} {:4}'.format(float(f),float(c),end=' '))
+
+tabel(-40)

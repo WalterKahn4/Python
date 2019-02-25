@@ -1,0 +1,5 @@
+infile = open("kaartnummers.py", 'rt')
+content = infile.read()
+print(content)
+content.readlines()
+infile.close()
