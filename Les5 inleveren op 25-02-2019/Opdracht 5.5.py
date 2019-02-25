@@ -1,7 +1,8 @@
-def gemiddelde(a):
-    lijst = a
-    len(a) // lijst[a]
+zin = input('Voer een willekeurige zin in: ')
 
-b = ['Een','Twee','Drie','Vier','Vijf']
+woorden = []
+for woord in zin.split():
+    woorden.append(len(woord))
 
-gemiddelde(b)
+gemiddelde = float(sum(woorden)) / len(woorden)
+print(gemiddelde)

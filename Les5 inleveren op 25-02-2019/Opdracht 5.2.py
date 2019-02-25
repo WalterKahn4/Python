@@ -1,11 +1,7 @@
-infile = open("kaartnummers.py", 'rt')
-content = infile.read()
-print(content)
-print(content[8:18] + ' heeft kaartnummer: ' + content[0:6])
-print(content[28:39] + ' heeft kaarnummer: ' + content[19:25])
-print(content[] + ' heeft kaarnummer: ' + content[])
-print(content[] + ' heeft kaarnummer: ' + content[])
-print(content[] + ' heeft kaarnummer: ' + content[])
-print(content[] + ' heeft kaarnummer: ' + content[])
+file = open('kaartnummers.py', 'r')
+content = file.read()
+file.close()
 
-infile.close()
+for line in content.splitlines():
+    kaartnummer, klant = line.split(',')
+    print('{} heeft kaartnummer: {}'.format(klant, kaartnummer))
