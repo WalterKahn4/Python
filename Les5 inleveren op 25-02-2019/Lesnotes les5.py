@@ -1,8 +1,8 @@
-Opdracht 5.1 is ingeleverd = False
-Opdracht 5.2 is ingeleverd = False
-Opdracht 5.3 is ingeleverd = False
-Opdracht 5.4 is ingeleverd = False
-Opdracht 5.5 is ingeleverd = False
+Opdracht 5.1 is ingeleverd = True
+Opdracht 5.2 is ingeleverd = True
+Opdracht 5.3 is ingeleverd = True
+Opdracht 5.4 is ingeleverd = True
+Opdracht 5.5 is ingeleverd = True
 
 weekday = 'wednesday'
 month = 'march'
