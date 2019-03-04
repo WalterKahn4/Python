@@ -9,13 +9,16 @@ keuze=int(input('Wat wil u doen?'))
 
 if keuze == 1:
     vrijekluizen = toon_aantal_kluizen_vrij()
-    print(vrijekluizen)
+    print(aantalKluizen)
 elif keuze == 2:
     nieuw = nieuwe_kluis()
     print(nieuw)
 elif keuze == 3:
-
+    open = kluis_openen()
+    print(open)
 elif keuze == 4:
+    terug = kluis_teruggeven()
+    print(terug)
 
 def toon_aantal_kluizen_vrij():
     infile = open('kluizen.py','r')
@@ -23,4 +26,18 @@ def toon_aantal_kluizen_vrij():
     aantalKluizen = len(lstRegels)
     return aantalKluizen
 
-def nieuw_kluis():
+def nieuwe_kluis():
+    kluisnummers = [1,2,3,4,5,6,7,8,9,10,11,12]
+    infile = open('kluizen.py')
+    regels = infile.readlines()
+    for regel in regels:
+        onderdelen = regel.split(';')
+        kluisnr = int(onderdelen[0])
+        kluisnummers.remove(kluisnr)
+    infile.close()
+    infile = open('kluizen.py', 'a')
+    infile.write(#)
+    infile.close()
+
+def kluis_openen():
+    infile = open('kluizen.py', 'r')
