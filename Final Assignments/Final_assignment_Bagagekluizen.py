@@ -1,9 +1,10 @@
-from random import randint
+from random import randint #importeert de mogelijkheid tot het creeren van random getallen
 
 file = open('kluizen.txt', 'a+')
 file.seek(0)
 file.close()
 
+#functie 1 het krijgen van een nieuwe kluis
 def nieuwe_kluis():
     file = open('kluizen.txt', 'r+')
     kluizen = []
@@ -20,6 +21,7 @@ def nieuwe_kluis():
                 break
     file.close()
 
+#functie 2 het openen van een kluis
 def kluis_openen():
     file = open('kluizen.txt', 'r')
     codeInput = int(input('Voer 4-cijferige code in: '))
@@ -34,7 +36,8 @@ def kluis_openen():
     print('Foutmelding! Er bestaat geen kluis met deze code.\n')
     file.close()
 
-def kluis_teruggeven():
+#functie 3 opgeven van de kluis
+def kluis_opgeven():
     file = open('kluizen.txt', "r+")
     codeInput = int(input('Voer 4-cijferige code in: '))
     kluizen = []
@@ -50,6 +53,7 @@ def kluis_teruggeven():
     file.writelines(nieuweRegels)
     file.close()
 
+#functie 4 het aantal vrije kluizen
 def aantal_kluizen_vrij():
     file = open('kluizen.txt', 'r')
     file.seek(0)
@@ -60,9 +64,11 @@ def aantal_kluizen_vrij():
 isBezig = True
 
 while(isBezig):
-    print('1: Ik wil een nieuwe kluis\n2: Ik wil mijn kluis openen\n'
-          '3: Ik geef mijn kluis terug\n4: Ik wil weten hoeveel kluizen nog '
-          'vrij zijn\n5: Ik wil stoppen\n''')
+    print('1: Ik wil een nieuwe kluis\n'
+          '2: Ik wil mijn kluis openen\n'
+          '3: Ik geef mijn kluis terug\n'
+          '4: Ik wil weten hoeveel kluizen nog vrij zijn''\n'
+          '5: Ik wil stoppen\n''')
 
     menukeuze = int(input('Kies een menu optie: '))
 
@@ -71,7 +77,7 @@ while(isBezig):
     elif menukeuze == 2:
         kluis_openen()
     elif menukeuze == 3:
-        kluis_teruggeven()
+        kluis_opgeven()
     elif menukeuze == 4:
         aantal_kluizen_vrij()
     else:

@@ -5,9 +5,8 @@ def f(y):
     a = 9
     return 2 * y + a
 
-print(a) # B) 3
+print(a)
 
-# Uitvoer 8_3B:
 x = 1
 y = 4
 
@@ -18,9 +17,8 @@ def fun():
     print(y, end = ' ')
 
 fun()
-print(y, end = '\n') # D) 3 3
+print(y, end = '\n')
 
-# Uitvoer 8_3C:
 x = 2
 y = 5
 
@@ -32,9 +30,8 @@ def fun():
     return x * y
 
 x = fun()
-print(x * y, end = '\n') # A) 3 15
+print(x * y, end = '\n')
 
-# Uitvoer 8_3D:
 a = 3
 
 def fun1():
@@ -52,9 +49,8 @@ def fun2(y):
 
 a = 9
 fun2(5)
-print('a:', a) # B) a: 9 a: 0
+print('a:', a)
 
-# Uitvoer 8_3E:
 x = 1
 y = 4
 
@@ -73,7 +69,6 @@ x = doe1()
 print(x) # C) 7
 
 
-# Uitvoer 8_3F:
 a = 5
 def fun1():
     global a
@@ -89,9 +84,8 @@ def fun2(y):
 
 print('a:', a, end = ' ')
 a = fun2(3)
-print('a:', a) # D) a: 5 a: 10
+print('a:', a)
 
-# Uitvoer 8_3G:
 x = 1
 y = 3
 
@@ -109,7 +103,6 @@ def doe2():
 doe2()
 print(x)
 
-# Uitvoer 8_3H:
 def doe1():
     y = 7
     x = 0
@@ -121,4 +114,4 @@ def doe2():
     x += 1
 
 doe2()
-print(x) # D) 8
+print(x)
